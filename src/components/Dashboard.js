@@ -14,7 +14,7 @@ const Dashboard = () => {
         <Card>Chart</Card>
       </div>
       <div>
-        <Card>Overvie</Card>
+        <Card>Overview</Card>
       </div>
       <div className="row-span-2 xl:row-span-3">
         <Card>Details</Card>
