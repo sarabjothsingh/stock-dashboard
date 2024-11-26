@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {mockSearchResults} from "../Constants/mock";
 import { SearchIcon, XIcon } from "@heroicons/react/solid";
-import SearchResults from './SearchResults';
+import SearchResults from './SearchResults.js';
 
 
 const Search = () => {
@@ -33,7 +33,7 @@ const Search = () => {
         />
 
         {input && (
-          <button onClick={clear}>
+          <button onClick={clear} className='m-1'>
             <XIcon className='h-4 w-4 fill-gray-500'/>
         </button>)}
         <button onClick={updateBestMatches} className='h-8 w-8 bg-indigo-600 rounded-md flex justify-center items-center m-1 p-2 transition duration-300 hover:ring-2 ring-indigo-400'>
