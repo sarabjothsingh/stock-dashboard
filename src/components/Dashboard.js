@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./Card.js";
 import { mockCompanyDetails } from "../Constants/mock.js"; 
 import Header from "./Header.js";
+import Card from "./card.js";
 
 const Dashboard = () => {
 // overall dashboard layout 
