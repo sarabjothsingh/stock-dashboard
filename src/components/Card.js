@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
 
-// here i've defined card component width,height, roundness etc
 const Card = ({ children }) => {
+  const { darkMode } = useContext(ThemeContext);
   return (
-    <div className="w-full h-full rounded-md relative p-8 border-2 bg-white border-neutral-200">
-       {children}
+    <div
+      className={`w-full h-full rounded-md relative p-8 border-2 ${
+        darkMode ? "bg-gray-900 border-gray-800" : "bg-white border-neutral-200"
+      }`}
+    >
+      {children}
     </div>
-     
   );
 };
 
